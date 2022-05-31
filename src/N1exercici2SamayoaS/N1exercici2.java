@@ -27,9 +27,16 @@ public class N1exercici2 {
 		int[] Concate = new int[size];
         int i = 0;
         
-        while (id > -1) {
-        	Concate[i] = Lista1.get(id);
-        	id--;
+        ListIterator<Integer> iterate = Lista1.listIterator();
+        iterate.next();
+        iterate.next();
+        iterate.next();
+        iterate.next();
+        iterate.next();
+        iterate.next();
+
+        while (iterate.hasPrevious()) {  
+        	Concate [i] = iterate.previous();
         	i++;
         }
         
